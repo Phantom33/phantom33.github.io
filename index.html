@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастер на час Донецк</title>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+        img.one {
+        height: 30%;
+        max-width: 100%;
+
+    }
+    ul {
+    list-style-type: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #191815;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 60px;
+	margin-right: 60px;
+    text-decoration: none;
+    font-size: 30pt;
+}
+
+li a:hover {
+    background-color: #111;}
+.mySlides {display:none}
+}
+
+div {
+text-align:center;
+}
+</style>
+</head>
+<body>
+    <img class="one" src="images/333.jpg" width="100%" height="30%"><br>
+    <ul>
+  <li><a class="active" href="index.html"><b>Главная</b></a></li>
+  <li><a href="amenities.html"><b>Услуги</b></a></li>
+  <li><a href="works.html"><b>Работы</b></a></li>
+  <li><a href="contacts.html"><b>Контакты</b></a></li>
+</ul>
+
+
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="images/kitchen.jpg" style="width:100%">
+  <img class="mySlides" src="images/plumbing.jpg" style="width:100%">
+  <img class="mySlides" src="images/room.jpg" style="width:100%">
+  <img class="mySlides" src="images/bathroom.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+<img class="two" src="images/text.jpg" style="width:100%">
+
+
+
+
+
+
+
+</body>
+    
+    
+</html>
